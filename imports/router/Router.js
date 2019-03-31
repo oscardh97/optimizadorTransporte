@@ -6,8 +6,7 @@ import Truck from './../ui/Truck.js';
 import Driver from './../ui/Driver.js';
 import Product from './../ui/Product.js';
 import Container from './../ui/Container.js';
-import Pack from './../ui/Packing.js';
->>>>>>> master
+import Packing from './../ui/Packing.js';
 
 
 class Router extends React.Component {
@@ -21,7 +20,7 @@ class Router extends React.Component {
                     <Route path="/contenedores" component= {Container}/>
                     <Route path="/conductores" component= {Driver}/>
                     <Route path="/productos" component= {Product}/>
-                    <Route path="/empaquetar" component= {Pack}/>
+                    <Route path="/empaquetar" component= {Packing}/>
                 </div>
             </BrowserRouter>
         )
