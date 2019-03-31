@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Tasks } from '../api/tasks.js';
 import Navbar from './../components/navbar.js';
+import { Button} from 'react-bootstrap';
  
 import Task from './Task.js';
 
@@ -33,22 +34,6 @@ class App extends Component {
     return (
       <div className="container">
         <Navbar />
-        <header>
-         
-          <h1>Todo List</h1>
- 
-          <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
-            <input
-              type="text"
-              ref="textInput"
-              placeholder="Type to add new tasks"
-            />
-          </form>
-        </header>
- 
-        <ul>
-          {this.renderTasks()}
-        </ul>
       </div>
     );
   }

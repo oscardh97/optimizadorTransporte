@@ -24,10 +24,10 @@ class Packing extends React.Component {
     ///////
     // Each Instance is repeated #15
     ///////
-    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Eraser", 1, 2, 5));
-    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Book", 15, 30, 3));
-    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Drink", 3, 3, 10));
-    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Umbrella", 5, 5, 20));
+    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Eraser", 10, 10, 10));
+    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Book", 10, 10, 10));
+    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Drink", 10, 10, 10));
+    instanceArray.insert(instanceArray.end(), 1, new packer.Product("Umbrella", 10, 10, 10));
  
  
     ///////////////////////////
@@ -43,6 +43,7 @@ class Packing extends React.Component {
     this.state = {
       containers: result
     };
+    console.log(my_packer);
     console.log(result);
     ///////////////////////////
     // TRACE PACKING RESULT
@@ -65,7 +66,7 @@ class Packing extends React.Component {
     post.forEach(function (box) {
       console.log(box)
       // var geometry = new THREE.BoxGeometry(box.wrapper.width, box.wrapper.height , box.wrapper.length);
-      var geometry = new THREE.BoxGeometry(box.instance.width, box.instance.height , box.instance.length);
+      var geometry = new THREE.BoxGeometry(box.instance.height, box.instance.length , box.instance.width);
       var material = new THREE.MeshBasicMaterial({ color: '#'+Math.floor(Math.random()*16777215).toString(16)});
       var cube = new THREE.Mesh(geometry , material);
       cube.position.set(box.x, box.y, box.z);
