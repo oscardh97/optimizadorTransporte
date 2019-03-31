@@ -36,6 +36,9 @@ class Navbar extends React.Component {
                       <li className="nav-item">
                         <a className="nav-link" href="productos">Productos</a>
                       </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="empaquetar">Empaquetar</a>
+                      </li>
                     </ul>
                   </div>
                 </nav>
