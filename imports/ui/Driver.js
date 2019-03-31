@@ -3,7 +3,7 @@ import Navbar from './../components/navbar.js';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Drivers } from '../api/drivers.js';
 import { Button, Modal, Form, Table } from 'react-bootstrap';
-
+import packer from '3d-bin-packing';
 // Task component - represents a single todo item
 class Driver extends React.Component {
    constructor(props, context) {
