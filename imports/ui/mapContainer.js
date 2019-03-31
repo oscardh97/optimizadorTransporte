@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar.js';
-import { Maps } from '../components/maps.js';
+import { Map } from '../components/maps.js';
 
 // Task component - represents a single todo item
 class MapContainer extends React.Component {
@@ -17,7 +17,7 @@ class MapContainer extends React.Component {
 
       <div className="container">
         <Navbar />
-        <Maps></Maps>
+        <Map></Map>
       </div>
     );
   }
