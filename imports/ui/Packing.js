@@ -65,13 +65,13 @@ class Packing extends React.Component {
     post.forEach(function (box) {
       console.log(box)
       // var geometry = new THREE.BoxGeometry(box.wrapper.width, box.wrapper.height , box.wrapper.length);
-      var geometry = new THREE.BoxGeometry(box.wrapper.width, box.wrapper.height , box.wrapper.length);
+      var geometry = new THREE.BoxGeometry(box.instance.width, box.instance.height , box.instance.length);
       var material = new THREE.MeshBasicMaterial({ color: '#'+Math.floor(Math.random()*16777215).toString(16)});
       var cube = new THREE.Mesh(geometry , material);
       cube.position.set(box.x, box.y, box.z);
       scene.add(cube);
-      // cube.rotation.x = 0.5;
-      cube.rotation.y = 0.1;
+      cube.rotation.x = 0.5;
+      cube.rotation.y = 0.5;
     });
   });
 
