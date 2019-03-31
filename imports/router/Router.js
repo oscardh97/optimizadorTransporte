@@ -5,6 +5,7 @@ import Customer from './../ui/Customer.js';
 import Truck from './../ui/Truck.js';
 import Driver from './../ui/Driver.js';
 import Product from './../ui/Product.js';
+import MapContainer from '../ui/mapContainer.js';
 
 
 class Router extends React.Component {
@@ -17,6 +18,7 @@ class Router extends React.Component {
                     <Route path="/camiones" component= {Truck}/>
                     <Route path="/conductores" component= {Driver}/>
                     <Route path="/productos" component= {Product}/>
+                    <Route path="/maps" component= {MapContainer}/>
                 </div>
             </BrowserRouter>
         )
