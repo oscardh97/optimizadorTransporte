@@ -10,6 +10,7 @@ import samchon from  "samchon-framework";
 class Container extends React.Component {
    constructor(props, context) {
     super(props, context);
+
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.state = {
